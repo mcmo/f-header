@@ -3,6 +3,7 @@ const Hapi = require('hapi')
 
 const server = new Hapi.Server()
 server.connection({
+  // required for Heroku
   port: process.env.PORT || 8080
 })
 
